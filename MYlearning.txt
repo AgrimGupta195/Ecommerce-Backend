@@ -1,0 +1,51 @@
+npm init - a tool that helps you set up a new or existing npm package
+
+The express-async-handler package is a utility that simplifies handling asynchronous route handlers in an Express application. It helps avoid repetitive try-catch blocks by automatically catching errors and passing them to the Express error-handling middleware.
+_____________________________________________________
+
+.env - to create tables or collections in a database
+
+config - create db connection and we make functionality use most time
+The Configuration Folder is a Designer Folder behavior that allows users to create additional       configurations on Data Structures.
+
+controllers - A controller's purpose is to receive requests for an application and handle them..
+
+middlewares - contains your application middleware. Middleware lets you define custom functions that can be run before rendering
+
+models- to create tables or collections in a database,
+
+utils -  folder is commonly used to store reusable utility functions or modules that provide helper methods for the application. These utilities are generally non-business-specific, generic, and reusable across multiple parts of the codebase.
+
+routes - the process of determining how an application responds to client requests to different endpoints (URLs).
+_____________________________________________________
+ 
+npm i express mongoose bcrypt body-parser dotenv
+
+_____________________________________________________
+
+app.listen(port,()) - start a web server and listen to the connections on the specified host and port
+
+Why Use err?.stack?
+Safety: Prevents runtime errors if err is undefined.
+Clarity: Explicitly handles cases where the error might not have a stack property (e.g., custom error objects).
+Fallbacks: Allows you to provide meaningful defaults using ??.
+
+this ?. is chaining expression --- simply end gate if any one is null return undefined
+
+.methods property on a schema is used to define instance methods
+
+Reasons to Validate Mongoose IDs:
+Ensure Validity of Client Input
+Prevent Query Errors
+Enhance Security
+Improve Debugging and Error Handling
+
+Why We Need a Refresh Token:(use Cookie-parser)
+Extend Session Lifespan:
+Allows users to maintain their session without requiring frequent logins, even after the access token expires.
+Enhance Security:
+Short-lived access tokens reduce the risk of misuse if stolen, while refresh tokens are securely stored and used to obtain new access tokens.
+
+cookie named refreshToken with the value of refreshToken. Here's a breakdown of the options:
+httpOnly: true: This ensures that the cookie is only accessible via HTTP requests and is not accessible through JavaScript in the browser, making it more secure against XSS (Cross-Site Scripting) attacks.
+maxAge: 72 * 60 * 60 * 1000: This sets the expiration time of the cookie to 72 hours (in milliseconds). The cookie will expire 72 hours after being set.
