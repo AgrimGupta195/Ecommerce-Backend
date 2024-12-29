@@ -1,6 +1,10 @@
 npm init - a tool that helps you set up a new or existing npm package
 
 The express-async-handler package is a utility that simplifies handling asynchronous route handlers in an Express application. It helps avoid repetitive try-catch blocks by automatically catching errors and passing them to the Express error-handling middleware.
+Morgan npm is a logging middleware for Express. js applications. It automatically logs incoming HTTP requests and their responses. Morgan can output logs in various formats like dev, combined, or even custom formats. It's typically used for monitoring and debugging purposes in Node.
+
+The slugify filter returns a text into one long word containing nothing but lower case ASCII characters and hyphens (-). Meaning: - All spaces converted into hyphens. - Removing all characters that are not aphanumeric, except hyphens and underscores.
+
 _____________________________________________________
 
 .env - to create tables or collections in a database
